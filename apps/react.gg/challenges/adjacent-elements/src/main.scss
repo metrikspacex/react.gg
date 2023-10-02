@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  div#root {
+    @apply min-h-screen bg-coal grid place-content-center;
+
+    & > div.layout {
+      border-radius: 0.8rem;
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "main   main   aside "
+        "footer footer footer";
+      grid-template-rows: 1fr auto 1fr;
+      height: 30rem;
+      width: 30rem;
+
+      & > header,
+      & > main,
+      & > aside,
+      & > footer {
+        @apply font-primary text-beige text-[1.6rem] font-bold not-italic leading-normal tracking-normal place-items-center grid;
+      }
+
+      & > header {
+        @apply bg-pink;
+
+        border-top-left-radius: 0.8rem;
+        border-top-right-radius: 0.8rem;
+        grid-area: header;
+      }
+
+      & > main {
+        @apply bg-purple;
+
+        grid-area: main;
+      }
+
+      & > aside {
+        @apply bg-yellow;
+
+        grid-area: aside;
+      }
+
+      & > footer {
+        @apply bg-green;
+
+        border-bottom-left-radius: 0.8rem;
+        border-bottom-right-radius: 0.8rem;
+        grid-area: footer;
+      }
+    }
+  }
+}

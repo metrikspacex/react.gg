@@ -4,7 +4,7 @@ import { describe, expect, it } from "vitest";
 import Complete from "./Complete";
 
 describe("Badge Variables - Complete", () => {
-  it("should render successfully", () => {
+  it("Should render successfully", () => {
     const { container } = render(<Complete />);
     expect(container).toBeTruthy();
   });

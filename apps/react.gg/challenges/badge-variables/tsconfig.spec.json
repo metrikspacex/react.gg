@@ -24,7 +24,6 @@
   ],
   "types": [
     "@nx/react/typings/cssmodule.d.ts",
-    "@nx/react/typings/image.d.ts",
-    "@nx/react/typings/styled-jsx.d.ts"
+    "@nx/react/typings/image.d.ts"
   ]
 }

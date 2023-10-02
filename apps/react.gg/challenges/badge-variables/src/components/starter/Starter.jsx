@@ -24,7 +24,7 @@ export default function Starter() {
       <img
         alt=" "
         className={clsx("h-[20rem] w-[20rem] rounded-[50%]")}
-        src=""
+        src={null}
       />
       <div className={clsx("")}>
         <h4

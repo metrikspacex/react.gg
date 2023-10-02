@@ -1,16 +1,11 @@
 {
-  "name": "conditional-rendering",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/react.gg/challenges/conditional-rendering/src",
+  "name": "conditional-rendering",
   "projectType": "application",
+  "sourceRoot": "apps/react.gg/challenges/conditional-rendering/src",
+  "tags": [ ],
   "targets": {
     "build": {
-      "executor": "@nx/vite:build",
-      "outputs": ["{options.outputPath}"],
-      "defaultConfiguration": "production",
-      "options": {
-        "outputPath": "dist/apps/react.gg/challenges/conditional-rendering"
-      },
       "configurations": {
         "development": {
           "mode": "development"
@@ -18,14 +13,43 @@
         "production": {
           "mode": "production"
         }
+      },
+      "defaultConfiguration": "production",
+      "executor": "@nx/vite:build",
+      "options": {
+        "outputPath": "dist/apps/react.gg/challenges/conditional-rendering"
+      },
+      "outputs": [
+        "{options.outputPath}"
+      ]
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/react.gg/challenges/conditional-rendering/**/*.{ts,tsx,js,jsx}"
+        ]
+      },
+      "outputs": [
+        "{options.outputFile}"
+      ]
+    },
+    "preview": {
+      "configurations": {
+        "development": {
+          "buildTarget": "conditional-rendering:build:development"
+        },
+        "production": {
+          "buildTarget": "conditional-rendering:build:production"
+        }
+      },
+      "defaultConfiguration": "development",
+      "executor": "@nx/vite:preview-server",
+      "options": {
+        "buildTarget": "conditional-rendering:build"
       }
     },
     "serve": {
-      "executor": "@nx/vite:dev-server",
-      "defaultConfiguration": "development",
-      "options": {
-        "buildTarget": "conditional-rendering:build"
-      },
       "configurations": {
         "development": {
           "buildTarget": "conditional-rendering:build:development",
@@ -35,40 +59,22 @@
           "buildTarget": "conditional-rendering:build:production",
           "hmr": false
         }
-      }
-    },
-    "preview": {
-      "executor": "@nx/vite:preview-server",
+      },
       "defaultConfiguration": "development",
+      "executor": "@nx/vite:dev-server",
       "options": {
         "buildTarget": "conditional-rendering:build"
-      },
-      "configurations": {
-        "development": {
-          "buildTarget": "conditional-rendering:build:development"
-        },
-        "production": {
-          "buildTarget": "conditional-rendering:build:production"
-        }
       }
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["{options.reportsDirectory}"],
       "options": {
         "passWithNoTests": true,
         "reportsDirectory": "../../../../coverage/apps/react.gg/challenges/conditional-rendering"
-      }
-    },
-    "lint": {
-      "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "apps/react.gg/challenges/conditional-rendering/**/*.{ts,tsx,js,jsx}"
-        ]
-      }
+      },
+      "outputs": [
+        "{options.reportsDirectory}"
+      ]
     }
-  },
-  "tags": []
+  }
 }

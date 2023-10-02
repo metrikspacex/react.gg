@@ -1,16 +1,11 @@
 {
-  "name": "rendering-lists-no-keys",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/react.gg/challenges/rendering-lists-no-keys/src",
+  "name": "rendering-lists-no-keys",
   "projectType": "application",
+  "sourceRoot": "apps/react.gg/challenges/rendering-lists-no-keys/src",
+  "tags": [ ],
   "targets": {
     "build": {
-      "executor": "@nx/vite:build",
-      "outputs": ["{options.outputPath}"],
-      "defaultConfiguration": "production",
-      "options": {
-        "outputPath": "dist/apps/react.gg/challenges/rendering-lists-no-keys"
-      },
       "configurations": {
         "development": {
           "mode": "development"
@@ -18,14 +13,43 @@
         "production": {
           "mode": "production"
         }
+      },
+      "defaultConfiguration": "production",
+      "executor": "@nx/vite:build",
+      "options": {
+        "outputPath": "dist/apps/react.gg/challenges/rendering-lists-no-keys"
+      },
+      "outputs": [
+        "{options.outputPath}"
+      ]
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/react.gg/challenges/rendering-lists-no-keys/**/*.{ts,tsx,js,jsx}"
+        ]
+      },
+      "outputs": [
+        "{options.outputFile}"
+      ]
+    },
+    "preview": {
+      "configurations": {
+        "development": {
+          "buildTarget": "rendering-lists-no-keys:build:development"
+        },
+        "production": {
+          "buildTarget": "rendering-lists-no-keys:build:production"
+        }
+      },
+      "defaultConfiguration": "development",
+      "executor": "@nx/vite:preview-server",
+      "options": {
+        "buildTarget": "rendering-lists-no-keys:build"
       }
     },
     "serve": {
-      "executor": "@nx/vite:dev-server",
-      "defaultConfiguration": "development",
-      "options": {
-        "buildTarget": "rendering-lists-no-keys:build"
-      },
       "configurations": {
         "development": {
           "buildTarget": "rendering-lists-no-keys:build:development",
@@ -35,40 +59,22 @@
           "buildTarget": "rendering-lists-no-keys:build:production",
           "hmr": false
         }
-      }
-    },
-    "preview": {
-      "executor": "@nx/vite:preview-server",
+      },
       "defaultConfiguration": "development",
+      "executor": "@nx/vite:dev-server",
       "options": {
         "buildTarget": "rendering-lists-no-keys:build"
-      },
-      "configurations": {
-        "development": {
-          "buildTarget": "rendering-lists-no-keys:build:development"
-        },
-        "production": {
-          "buildTarget": "rendering-lists-no-keys:build:production"
-        }
       }
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["{options.reportsDirectory}"],
       "options": {
         "passWithNoTests": true,
         "reportsDirectory": "../../../../coverage/apps/react.gg/challenges/rendering-lists-no-keys"
-      }
-    },
-    "lint": {
-      "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "apps/react.gg/challenges/rendering-lists-no-keys/**/*.{ts,tsx,js,jsx}"
-        ]
-      }
+      },
+      "outputs": [
+        "{options.reportsDirectory}"
+      ]
     }
-  },
-  "tags": []
+  }
 }

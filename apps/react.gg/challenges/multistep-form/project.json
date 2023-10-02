@@ -1,16 +1,11 @@
 {
-  "name": "multistep-form",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/react.gg/challenges/multistep-form/src",
+  "name": "multistep-form",
   "projectType": "application",
+  "sourceRoot": "apps/react.gg/challenges/multistep-form/src",
+  "tags": [ ],
   "targets": {
     "build": {
-      "executor": "@nx/vite:build",
-      "outputs": ["{options.outputPath}"],
-      "defaultConfiguration": "production",
-      "options": {
-        "outputPath": "dist/apps/react.gg/challenges/multistep-form"
-      },
       "configurations": {
         "development": {
           "mode": "development"
@@ -18,14 +13,43 @@
         "production": {
           "mode": "production"
         }
+      },
+      "defaultConfiguration": "production",
+      "executor": "@nx/vite:build",
+      "options": {
+        "outputPath": "dist/apps/react.gg/challenges/multistep-form"
+      },
+      "outputs": [
+        "{options.outputPath}"
+      ]
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/react.gg/challenges/multistep-form/**/*.{ts,tsx,js,jsx}"
+        ]
+      },
+      "outputs": [
+        "{options.outputFile}"
+      ]
+    },
+    "preview": {
+      "configurations": {
+        "development": {
+          "buildTarget": "multistep-form:build:development"
+        },
+        "production": {
+          "buildTarget": "multistep-form:build:production"
+        }
+      },
+      "defaultConfiguration": "development",
+      "executor": "@nx/vite:preview-server",
+      "options": {
+        "buildTarget": "multistep-form:build"
       }
     },
     "serve": {
-      "executor": "@nx/vite:dev-server",
-      "defaultConfiguration": "development",
-      "options": {
-        "buildTarget": "multistep-form:build"
-      },
       "configurations": {
         "development": {
           "buildTarget": "multistep-form:build:development",
@@ -35,40 +59,22 @@
           "buildTarget": "multistep-form:build:production",
           "hmr": false
         }
-      }
-    },
-    "preview": {
-      "executor": "@nx/vite:preview-server",
+      },
       "defaultConfiguration": "development",
+      "executor": "@nx/vite:dev-server",
       "options": {
         "buildTarget": "multistep-form:build"
-      },
-      "configurations": {
-        "development": {
-          "buildTarget": "multistep-form:build:development"
-        },
-        "production": {
-          "buildTarget": "multistep-form:build:production"
-        }
       }
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["{options.reportsDirectory}"],
       "options": {
         "passWithNoTests": true,
         "reportsDirectory": "../../../../coverage/apps/react.gg/challenges/multistep-form"
-      }
-    },
-    "lint": {
-      "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "apps/react.gg/challenges/multistep-form/**/*.{ts,tsx,js,jsx}"
-        ]
-      }
+      },
+      "outputs": [
+        "{options.reportsDirectory}"
+      ]
     }
-  },
-  "tags": []
+  }
 }
