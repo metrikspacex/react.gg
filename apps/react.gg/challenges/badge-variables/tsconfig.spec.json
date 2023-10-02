@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "types": [
+      "node",
+      "vite/client",
+      "vitest",
+      "vitest/globals",
+      "vitest/importMeta"
+    ]
+  },
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/**/*.d.ts",
+    "src/**/*.spec.js",
+    "src/**/*.spec.jsx",
+    "src/**/*.spec.ts",
+    "src/**/*.spec.tsx",
+    "src/**/*.test.js",
+    "src/**/*.test.jsx",
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx",
+    "vite.config.ts"
+  ],
+  "types": [
+    "@nx/react/typings/cssmodule.d.ts",
+    "@nx/react/typings/image.d.ts",
+    "@nx/react/typings/styled-jsx.d.ts"
+  ]
+}

@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-coal: #0f0d0e;
+    --brand-charcoal: #231f20;
+    --brand-charcoal-muted: #1b1918;
+    --brand-gray: #262522;
+    --brand-yellow: #fcba28;
+    --brand-pink: #f38ba3;
+    --brand-green: #0ba95b;
+    --brand-purple: #7b5ea7;
+    --brand-beige: #f9f4da;
+    --brand-blue: #12b5e5;
+    --brand-orange: #fc7428;
+    --brand-red: #ed203d;
+    --brand-white: #fff;
+    --red: var(--brand-red);
+    --white: var(--brand-beige);
+    --purple: var(--brand-purple);
+    --black: var(--brand-coal);
+    --blue: var(--brand-blue);
+    --pink: var(--brand-pink);
+    --gold: var(--brand-yellow);
+    --aqua: var(--brand-blue);
+    --yellow: var(--brand-yellow);
+    --green: var(--brand-green);
+    --orange: var(--brand-orange);
+    --charcoal: var(--brand-charcoal);
+    --coal: var(--brand-coal);
+    --gray: var(--brand-gray);
+    --gray-25: #f7f7f7;
+    --gray-50: #f3f3f5;
+    --gray-75: #e9eaec;
+    --gray-100: #e1e2e4;
+    --gray-200: #b1b4b9;
+    --gray-300: #767980;
+    --gray-400: #5c6069;
+    --gray-500: #383c44;
+    --gray-600: #1d2025;
+    --gray-700: #131519;
+    --gray-800: #0c0e10;
+    --gray-900: #000;
+  }
+}

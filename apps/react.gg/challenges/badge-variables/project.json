@@ -1,0 +1,80 @@
+{
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "name": "badge-variables",
+  "projectType": "application",
+  "sourceRoot": "apps/react.gg/challenges/badge-variables/src",
+  "tags": [ ],
+  "targets": {
+    "build": {
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        }
+      },
+      "defaultConfiguration": "production",
+      "executor": "@nx/vite:build",
+      "options": {
+        "outputPath": "dist/apps/react.gg/challenges/badge-variables"
+      },
+      "outputs": [
+        "{options.outputPath}"
+      ]
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/react.gg/challenges/badge-variables/**/*.{ts,tsx,js,jsx}"
+        ]
+      },
+      "outputs": [
+        "{options.outputFile}"
+      ]
+    },
+    "preview": {
+      "configurations": {
+        "development": {
+          "buildTarget": "badge-variables:build:development"
+        },
+        "production": {
+          "buildTarget": "badge-variables:build:production"
+        }
+      },
+      "defaultConfiguration": "development",
+      "executor": "@nx/vite:preview-server",
+      "options": {
+        "buildTarget": "badge-variables:build"
+      }
+    },
+    "serve": {
+      "configurations": {
+        "development": {
+          "buildTarget": "badge-variables:build:development",
+          "hmr": true
+        },
+        "production": {
+          "buildTarget": "badge-variables:build:production",
+          "hmr": false
+        }
+      },
+      "defaultConfiguration": "development",
+      "executor": "@nx/vite:dev-server",
+      "options": {
+        "buildTarget": "badge-variables:build"
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../../../coverage/apps/react.gg/challenges/badge-variables"
+      },
+      "outputs": [
+        "{options.reportsDirectory}"
+      ]
+    }
+  }
+}

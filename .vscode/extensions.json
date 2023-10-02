@@ -1,7 +1,9 @@
 {
   "recommendations": [
-    "nrwl.angular-console",
-    "esbenp.prettier-vscode",
-    "dbaeumer.vscode-eslint"
+    "ZixuanChen.vitest-explorer", // vitest
+    "dbaeumer.vscode-eslint", // eslint
+    "esbenp.prettier-vscode", // prettier
+    "nrwl.angular-console", // nx console
+    "yzhang.markdown-all-in-one", // markdown
   ]
 }
