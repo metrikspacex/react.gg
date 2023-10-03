@@ -76,7 +76,7 @@
     "apps/react.gg/challenges/video-player": true,
 
     // Warning - turn on complete view
-    "apps/react.gg/challenges/**/components/complete/": false,
+    "apps/react.gg/challenges/**/components/complete/": true,
   },
 
   // Editor
