@@ -38,7 +38,7 @@
     "apps/react.gg/challenges/children-props": true, // TODO
     "apps/react.gg/challenges/click-outside": true,
     "apps/react.gg/challenges/clock": true,
-    "apps/react.gg/challenges/conditional-rendering": false, // TODO
+    "apps/react.gg/challenges/conditional-rendering": true, // Complete
     "apps/react.gg/challenges/counter": true,
     "apps/react.gg/challenges/country-info": true,
     "apps/react.gg/challenges/data-table": true,
