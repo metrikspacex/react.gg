@@ -62,21 +62,21 @@
     "apps/react.gg/challenges/optimizing-renders": true,
     "apps/react.gg/challenges/password-toggle": true, // TODO
     "apps/react.gg/challenges/react-ruler": true,
-    "apps/react.gg/challenges/rendering-lists": true, // TODO
-    "apps/react.gg/challenges/rendering-lists-no-keys": true, // TODO
+    "apps/react.gg/challenges/rendering-lists": false, // TODO
+    "apps/react.gg/challenges/rendering-lists-no-keys": false, // TODO
     "apps/react.gg/challenges/search-filter": true,
     "apps/react.gg/challenges/smart-character-limit": true, // TODO
     "apps/react.gg/challenges/string-props": true,
     "apps/react.gg/challenges/tabs": true,
     "apps/react.gg/challenges/task-manager": true,
-    "apps/react.gg/challenges/ternary-rendering": true, // TODO
+    "apps/react.gg/challenges/ternary-rendering": false, // Complete - Warning: test incomplete
     "apps/react.gg/challenges/translations": true,
     "apps/react.gg/challenges/undo-redo": true,
     "apps/react.gg/challenges/use-document-title": true,
     "apps/react.gg/challenges/video-player": true,
 
     // Warning - turn on complete view
-    "apps/react.gg/challenges/**/components/complete/": true,
+    "apps/react.gg/challenges/**/components/complete/": false,
   },
 
   // Editor

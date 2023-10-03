@@ -10,7 +10,7 @@ import Starter from "./components/starter/Starter";
 
 export default function App() {
   return (
-    <main className={clsx("grid min-h-screen place-content-center bg-black")}>
+    <main className={clsx("bg-coal grid min-h-screen place-content-center")}>
       <BrowserRouter>
         <Routes>
           <Route index element={<Starter />} path="/starter" />

@@ -25,9 +25,10 @@ describe("Ternary Rendering - Complete", () => {
     }
   });
 
-  // How to test ternary was used ?
   it("Use a ternary operator", () => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const { container } = render(<Complete />);
+    // Maybe to loose of a constrain
+    expect(Complete.toString(), "Should use ternary operator").contains(
+      "return __vite_ssr_import_2__.getIsLactoseTolerant() ? /* @__PURE__ */"
+    );
   });
 });
