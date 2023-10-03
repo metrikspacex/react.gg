@@ -1,0 +1,1 @@
+# The Array.map method in JavaScript has a callback that receives 3 arguments, the current element in the list, the index, and a reference to the original array. If you don't have a unique key available in your data, using the index as the key works – assuming you're not mutating the array.

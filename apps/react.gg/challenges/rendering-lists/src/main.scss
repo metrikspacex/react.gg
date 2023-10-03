@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .friends-list {
+    @apply list-disc;
+    & > li {
+      @apply font-primary text-beige m-[0.5rem] text-[1.8rem] font-bold not-italic leading-normal tracking-normal;
+    }
+  }
+}

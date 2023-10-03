@@ -28,52 +28,52 @@
     // Packages - React.gg
     "apps/react.gg/": false,
     "apps/react.gg/challenges/": false,
-    "apps/react.gg/challenges/add-to-cart": true,
+    "apps/react.gg/challenges/add-to-cart": true, // TODO
     "apps/react.gg/challenges/adjacent-elements": true, // Complete
-    "apps/react.gg/challenges/auth": true,
-    "apps/react.gg/challenges/autofocus": true,
+    "apps/react.gg/challenges/auth": true, // TODO
+    "apps/react.gg/challenges/autofocus": true, // TODO
     "apps/react.gg/challenges/badge-variables": true, // Complete
     "apps/react.gg/challenges/character-limit": true, // Todo
     "apps/react.gg/challenges/character-limit-props": true, // Todo
     "apps/react.gg/challenges/children-props": true, // TODO
-    "apps/react.gg/challenges/click-outside": true,
-    "apps/react.gg/challenges/clock": true,
+    "apps/react.gg/challenges/click-outside": true, // TODO
+    "apps/react.gg/challenges/clock": true, // TODO
     "apps/react.gg/challenges/conditional-rendering": true, // Complete
-    "apps/react.gg/challenges/counter": true,
-    "apps/react.gg/challenges/country-info": true,
-    "apps/react.gg/challenges/data-table": true,
+    "apps/react.gg/challenges/counter": true, // TODO
+    "apps/react.gg/challenges/country-info": true, // TODO
+    "apps/react.gg/challenges/data-table": true, // TODO
     "apps/react.gg/challenges/dynamic-date": true, // Complete
-    "apps/react.gg/challenges/expanding-textarea": true,
-    "apps/react.gg/challenges/field-notes": true,
-    "apps/react.gg/challenges/flexible-tooltip": true,
-    "apps/react.gg/challenges/follow-the-leader": true,
+    "apps/react.gg/challenges/expanding-textarea": true, // TODO
+    "apps/react.gg/challenges/field-notes": true, // TODO
+    "apps/react.gg/challenges/flexible-tooltip": true, // TODO
+    "apps/react.gg/challenges/follow-the-leader": true, // TODO
     "apps/react.gg/challenges/form-builder": true, // TODO
     "apps/react.gg/challenges/function-props": true, // TODO
-    "apps/react.gg/challenges/hacker-news": true,
+    "apps/react.gg/challenges/hacker-news": true, // TODO
     "apps/react.gg/challenges/light-switch": true, // TODO
     "apps/react.gg/challenges/light-switch-concise": true, // TODO
-    "apps/react.gg/challenges/localized-primes": true,
-    "apps/react.gg/challenges/match-media": true,
+    "apps/react.gg/challenges/localized-primes": true, // TODO
+    "apps/react.gg/challenges/match-media": true, // TODO
     "apps/react.gg/challenges/multistep-form": true, // TODO
     "apps/react.gg/challenges/multistep-form-reducer": true,
-    "apps/react.gg/challenges/news-feed": true,
+    "apps/react.gg/challenges/news-feed": true, // TODO
     "apps/react.gg/challenges/object-props": true, // TODO
-    "apps/react.gg/challenges/optimized-renders": true,
-    "apps/react.gg/challenges/optimizing-renders": true,
+    "apps/react.gg/challenges/optimized-renders": true, // TODO
+    "apps/react.gg/challenges/optimizing-renders": true, // TODO
     "apps/react.gg/challenges/password-toggle": true, // TODO
-    "apps/react.gg/challenges/react-ruler": true,
-    "apps/react.gg/challenges/rendering-lists": false, // TODO
-    "apps/react.gg/challenges/rendering-lists-no-keys": false, // TODO
-    "apps/react.gg/challenges/search-filter": true,
+    "apps/react.gg/challenges/react-ruler": true, // TODO
+    "apps/react.gg/challenges/rendering-lists": true, // Complete
+    "apps/react.gg/challenges/rendering-lists-no-keys": true, // Complete
+    "apps/react.gg/challenges/search-filter": true, // TODO
     "apps/react.gg/challenges/smart-character-limit": true, // TODO
-    "apps/react.gg/challenges/string-props": true,
-    "apps/react.gg/challenges/tabs": true,
-    "apps/react.gg/challenges/task-manager": true,
-    "apps/react.gg/challenges/ternary-rendering": false, // Complete - Warning: test incomplete
-    "apps/react.gg/challenges/translations": true,
-    "apps/react.gg/challenges/undo-redo": true,
-    "apps/react.gg/challenges/use-document-title": true,
-    "apps/react.gg/challenges/video-player": true,
+    "apps/react.gg/challenges/string-props": true, // Complete
+    "apps/react.gg/challenges/tabs": true, // TODO
+    "apps/react.gg/challenges/task-manager": true, // TODO
+    "apps/react.gg/challenges/ternary-rendering": true, // Complete
+    "apps/react.gg/challenges/translations": true, // TODO
+    "apps/react.gg/challenges/undo-redo": true, // TODO
+    "apps/react.gg/challenges/use-document-title": true, // TODO
+    "apps/react.gg/challenges/video-player": true, // TODO
 
     // Warning - turn on complete view
     "apps/react.gg/challenges/**/components/complete/": false,
